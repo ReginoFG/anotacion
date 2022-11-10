@@ -5,27 +5,27 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class gestionAlmacen {
+public class GestionAlmacen {
 	
   @Autowired
-  repoProducto1 repo1;
+  RepoProducto1 repo1;
   @Autowired
-  repoProducto2 repo2;
+  RepoProducto2 repo2;
   
   
-  public void insertarProducto1(producto1 producto) {
+  public void insertarProducto1(Producto1 producto) {
     repo1.insertar(producto);
   }
   
-  public void insertarProducto2(producto2 producto) {
+  public void insertarProducto2(Producto2 producto) {
 	    repo2.insertar(producto);
   }  
   
-  public List<producto1> listarTodosProductos1() {
+  public List<Producto1> listarTodosProductos1() {
     return repo1.listarTodos();
   }  
   
-  public List<producto2> listarTodosProductos2() {
+  public List<Producto2> listarTodosProductos2() {
     return repo2.listarTodos();
   }
   

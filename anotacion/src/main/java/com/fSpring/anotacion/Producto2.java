@@ -1,14 +1,14 @@
 package com.fSpring.anotacion;
 
-public class producto1{
+public class Producto2{
 	
-	public producto1(String nombre, int precio) {
+	public Producto2(String nombre, int precio) {
 		super();
 		this.nombre = nombre;
 		this.precio = precio;
 	}
 	
-	public producto1() {
+	public Producto2() {
 		
 	};
 	
